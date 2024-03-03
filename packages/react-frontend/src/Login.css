@@ -1,73 +1,86 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #6a5acd; /* Darker purple background */
-  color: white;
-}
-
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 160vh; /* Adjust the height as needed, for example, 160% of the viewport height */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 60vh;
+  color: rgb(0, 0, 0);
 }
+/* Rectangle 27 */
 
 .form-container {
-  background-color: #ae77ae; /* Pale purple window */
-  padding: 20px;
-  border-radius: 90px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  width: 400%; /* Adjust the width as needed */
-  max-width: 900px;
-  height: 400%; /* Adjust the width as needed */
-  max-height: 500px; /* Set a max-width to prevent it from becoming too wide */
+  background-color: #FFEFD6;
+  padding: 40px;
+  border-radius: 31px;
+  text-align: left;
+  width: 681px;
+  height: 443px;
+  left: 416px;
+  top: 410px;
+  margin-bottom: 30px; /* Adjust the margin as needed */
+  /* Username */
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 28px;
+/* identical to box height, or 111% */
+
+color: #000000;
+
+
 }
 
-.form-container input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 30px;
-  margin-bottom: 300px;
-  border: 30px solid rgb(0, 0, 0);
-  border-radius: 100px;
-}
-
-.login-button,
 .create-account-button {
-  width: 100%;
-  max-width: 900px;
+  max-width: 40%; /* Adjust the width as needed */
+  color: #000000;
+  background-color: #8dbdff;
   padding: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 50px;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+  margin-top: 10px; /* Adjust the margin as needed */
+  margin-left: auto; /* Move buttons to the center */
+  margin-right: auto; /* Move buttons to the center */
+  display: block; /* Ensure the buttons take full width */
 }
 
 .login-button {
-  background: rgb(176, 154, 196);
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.create-account-button {
-  background: rgb(128, 105, 233);
-  margin-bottom: 30px;
-}
-
-.logout-button {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: #ff6347; /* Tomato red background */
-  color: white;
-  padding: 10px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
+  background-color: rgb(48, 60, 190);
+  margin-top: 30px; /* Adjust the margin as needed */
+  margin-bottom: 10px;
+  border: none;
+  width: 50%;
+  padding: 10px;
+  margin-left: auto; /* Move buttons to the center */
+  margin-right: auto; /* Move buttons to the center */
+  display: block; /* Ensure the buttons take full width */
+
+  
 }
 
-.logout-button:hover {
-  background: #d23f30; /* Darker red on hover */
+.header_bb {
+  font-family: "Century Gothic", Futura, sans-serif;
+  font-size: 50pt;
+  font-weight: bold;
+  color: rgb(48, 60, 190);
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+}
+
+
+.nav_bar{
+  /* Group 1 */
+
+  width: 100%;
+  height: 105px;
+  left: 0px;
+  top: 0px;
+  color:rgb(48, 60, 190);
+
+
+
 }
