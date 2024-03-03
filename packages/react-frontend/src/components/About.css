@@ -1,0 +1,18 @@
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-title {
+    font-size: 24px;
+    color: #E84E58;
+    margin-bottom: 15px;
+  }
+  
+  .about-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  

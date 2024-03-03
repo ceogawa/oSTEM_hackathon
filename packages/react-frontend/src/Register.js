@@ -52,7 +52,7 @@ export const Register = () => {
   return (
     <div className="container2">
       <div className="form-container2">
-      <div claaName="header_bb2">BeyondBinary</div>
+      <div className="header_bb2">BeyondBinary</div>
         <input
           type="text"
           placeholder="Username"

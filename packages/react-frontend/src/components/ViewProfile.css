@@ -1,0 +1,10 @@
+/* ViewProfiles.css */
+.profile-container {
+    border: none; /* Border color */
+    background-color: #FFE6E8;
+    padding: 20px;
+    border-radius: 3px;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a box shadow for a subtle effect */
+  }
+  

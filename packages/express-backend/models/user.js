@@ -17,7 +17,7 @@ const UserSchema = new mongoose.Schema(
       trim: true,
     },
   },
-  { collection: "beyond_users" }
+  { collection: "community_members" }
 );
 
 const User = mongoose.model("User", UserSchema);

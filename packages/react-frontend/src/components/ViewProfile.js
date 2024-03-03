@@ -1,6 +1,7 @@
-// ViewProfiles.js
+// ViewProfile.js
 import React from 'react';
 import Profile from './Profile';
+import './ViewProfile.css';
 
 const ViewProfiles = () => {
   // Hardcoded profile data
@@ -12,8 +13,10 @@ const ViewProfiles = () => {
 
   return (
     <div>
-      <h1>View Profiles</h1>
-      <Profile {...hardcodedProfile} />
+      <h3>Search for your community here......</h3>
+      <div className="profile-container">
+        <Profile {...hardcodedProfile} />
+      </div>
     </div>
   );
 };

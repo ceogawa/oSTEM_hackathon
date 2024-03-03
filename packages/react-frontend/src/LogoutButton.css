@@ -2,11 +2,11 @@
 
 .logout-button-container {
   display: flex;
-  background-color: lightcoral;
+  background-color: rgb(48, 60, 190);
 }
 
 .logout-button {
-  background-color: lightcoral;
+  background-color: rgb(48, 60, 190);
   color: white;
   padding: 10px 15px;
   margin: 10px;

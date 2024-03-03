@@ -1,0 +1,42 @@
+/* ProfileForm.css */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  select {
+    appearance: none;
+  }
+  
+  h5 {
+    margin-top: 16px;
+  }
+  
+  button {
+    background-color: rgb(48, 60, 190);
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Add any additional styles as needed */
+  

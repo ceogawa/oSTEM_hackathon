@@ -25,16 +25,19 @@ const Profile = ({ name, interests, movies }) => {
   return (
     <div className="profile-container">
       <h2>{name}'s Profile</h2>
-      <button onClick={toggleDetails}>{showDetails ? 'Hide Details' : 'Show Details'}</button>
+      <button onClick={toggleDetails}style={{ backgroundColor: 'rgb(48, 60, 190)', color: 'white', padding: '10px 15px', margin: '5px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>{showDetails ? 'Hide Details' : 'Show Details'}</button>
       {showDetails && (
         <div>
             <p>Hi, there ! This is Bob. I have included some of my interests in sports and movies below.</p>
+            <p>Pronouns: He/They</p>
+            <p>Gender Identity: Man</p>
+            <p>Sexual Orientation: Bisexual</p>
           <p>Interest in Sports: {interests.join(', ')}</p>
           <p>Interest in Movies: {movies.join(', ')}</p>
-          <button onClick={handleConnect}>Connect</button>
+          <button onClick={handleConnect} style={{ backgroundColor: 'rgb(48, 60, 190)', color: 'white', padding: '10px 15px', margin: '5px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>Connect</button>
 
           {/* Messaging Section */}
-          <h3>Chat</h3>
+          <h3>Reachout to Bob...</h3>
           <div className="chat-container">
             {chat.map((message, index) => (
               <div key={index} className={message.sender === 'You' ? 'sent-message' : 'received-message'}>
@@ -46,9 +49,9 @@ const Profile = ({ name, interests, movies }) => {
             type="text"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder="Type your message..."
+            placeholder="Message Bob"
           />
-          <button onClick={handleSendMessage}>Send</button>
+          <button onClick={handleSendMessage} style={{ backgroundColor: 'rgb(48, 60, 190)', color: 'white', padding: '10px 15px', margin: '5px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>Send</button>
         </div>
       )}
     </div>

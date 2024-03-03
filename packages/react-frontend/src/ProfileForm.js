@@ -1,6 +1,7 @@
 // ProfileForm.js
 import React, { useState } from 'react';
 import { Navigate, useNavigate } from "react-router-dom";
+import './ProfileForm.css'; // Import the CSS file
 
 const ProfileForm = () => {
   const navigate = useNavigate();
@@ -29,15 +30,13 @@ const ProfileForm = () => {
 
   // Handler for form submission
   const handleSubmit = (e) => {
-    
     e.preventDefault();
     console.log('Form submitted:', formData);
     navigate("/home");
-    
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="profile-form" onSubmit={handleSubmit}>
       {/* Name, Pronouns, Gender Identity, Sexual Orientation, Age */}
       <label>
         Name:
@@ -86,7 +85,7 @@ const ProfileForm = () => {
       </label>
 
       {/* Sports Section */}
-      <h2>Are you interested in Sports?</h2>
+      <h5>Are you interested in Sports?</h5>
       <select
         name="sportsInterest"
         value={formData.sportsInterest}
@@ -106,9 +105,7 @@ const ProfileForm = () => {
         />
       )}
 
-      {/* Books Section */}
-      {/* Similar structure as the Sports section */}
-      <h2>Are you interested in Books?</h2>
+      <h5>Are you interested in Books?</h5>
       <select
         name="booksInterest"
         value={formData.booksInterest}
@@ -128,9 +125,7 @@ const ProfileForm = () => {
         />
       )}
 
-      {/* Movies Section */}
-      {/* Similar structure as the Sports section */}
-      <h2>Are you interested in Movies?</h2>
+      <h5>Are you interested in Movies?</h5>
       <select
         name="moviesInterest"
         value={formData.moviesInterest}
@@ -150,9 +145,7 @@ const ProfileForm = () => {
         />
       )}
 
-      {/* Social Causes Section */}
-      {/* Similar structure as the Sports section */}
-      <h2>Are you interested in Social Causes?</h2>
+      <h5>Are you involved in Social Causes?</h5>
       <select
         name="socialCausesInterest"
         value={formData.socialCausesInterest}
@@ -173,7 +166,7 @@ const ProfileForm = () => {
       )}
 
       {/* Additional Information */}
-      <h2>What do you like to do in your free time?</h2>
+      <h5>What do you like to do in your free time?</h5>
       <textarea
         name="additionalInfo"
         placeholder="Anything else you want to share"
@@ -181,10 +174,9 @@ const ProfileForm = () => {
         onChange={handleChange}
       />
 
-      {/* Submit Button */}
-      <button type="submit" style={{ backgroundColor: 'red', color: 'white', padding: '10px 15px', border: 'none', borderRadius: '5px', cursor: 'pointer', fontSize: '14px' }}>
-      Submit
-    </button>
+      <button style={{ backgroundColor: 'rgb(48, 60, 190)', color: 'white', padding: '10px 15px', margin: '5px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}type="submit">
+        Submit
+      </button>
     </form>
   );
 };

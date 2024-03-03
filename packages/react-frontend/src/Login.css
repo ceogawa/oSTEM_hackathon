@@ -9,7 +9,7 @@
 /* Rectangle 27 */
 
 .form-container {
-  background-color: #FFEFD6;
+  background-color: #FFE6E8;
   padding: 40px;
   border-radius: 31px;
   text-align: left;
@@ -27,13 +27,12 @@ line-height: 28px;
 
 color: #000000;
 
-
 }
 
 .create-account-button {
   max-width: 40%; /* Adjust the width as needed */
-  color: #000000;
-  background-color: #8dbdff;
+  color: hsl(0, 0%, 95%);
+  background-color: rgb(48, 60, 190);
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -65,7 +64,7 @@ color: #000000;
   font-family: "Century Gothic", Futura, sans-serif;
   font-size: 50pt;
   font-weight: bold;
-  color: rgb(48, 60, 190);
+  color: rgb(232, 78, 88);
   text-align: center;
   padding: 20px;
   width: 50%;
