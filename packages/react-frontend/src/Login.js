@@ -25,7 +25,7 @@ export const Login = () => {
   return (
     <div className="container">
       <div className="form-container">
-        <h1>Scrapjam</h1>
+        <h1>Beyond Binary</h1>
         <label htmlFor="username" style={{ marginTop: '60px' }}>
           Username:
         </label>

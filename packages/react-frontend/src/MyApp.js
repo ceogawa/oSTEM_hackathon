@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './Login';
 import Register from './Register';
 import ProfileForm from './ProfileForm';
-import Home from './Home';
+import Home from './components/Home';
+import AppRoutes from './components/Routes';
 import { AuthProvider } from './context/AuthProvider';
 import { useAuth } from './context/AuthProvider';
 import { useNavigate } from "react-router-dom";
@@ -12,11 +13,10 @@ import './LogoutButton.css';
 import ProtectedRoute  from "./utils/ProtectedRoute";
 
 const LogoutButton = () => {
-  const { value } = useAuth(); // Ensure you are extracting the correct property
+  const { value } = useAuth();
   const { onLogout } = value;
   const navigate = useNavigate();
   const handleLogout = () => {
-    
     onLogout();
     navigate('/login');
   };
@@ -39,6 +39,15 @@ const MyApp = () => {
           <Route path="/registration" element={<Register />} />
           <Route path="/profile" element={<ProtectedRoute><ProfileForm /></ProtectedRoute>} />
           <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+          {/* Use a React.Fragment or Route for AppRoutes */}
+          <Route
+            path="/*"
+            element={
+              <React.Fragment>
+                <AppRoutes />
+              </React.Fragment>
+            }
+          />
         </Routes>
       </AuthProvider>
     </Router>

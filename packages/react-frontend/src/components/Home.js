@@ -7,7 +7,7 @@ const Home = () => {
     <div>
       <nav style={{ backgroundColor: 'darkblue', padding: '10px', color: 'white' }}>
         <NavLink to="/about" style={{ margin: '0 10px', color: 'white', textDecoration: 'none' }}>About</NavLink>
-        <NavLink to="/view-profiles" style={{ margin: '0 10px', color: 'white', textDecoration: 'none' }}>View Profiles</NavLink>
+        <NavLink to="/profiles" style={{ margin: '0 10px', color: 'white', textDecoration: 'none' }}>View Profiles</NavLink>
         <NavLink to="/view-chats" style={{ margin: '0 10px', color: 'white', textDecoration: 'none' }}>View Chats</NavLink>
       </nav>
       
