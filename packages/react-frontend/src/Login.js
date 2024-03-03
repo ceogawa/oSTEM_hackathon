@@ -24,8 +24,12 @@ export const Login = () => {
 
   return (
     <div className="container">
+        <div className = "header_bb">
+          BeyondBinary
+        </div>
+
       <div className="form-container">
-        <h1>Scrapjam</h1>
+
         <label htmlFor="username" style={{ marginTop: '60px' }}>
           Username:
         </label>
@@ -54,7 +58,7 @@ export const Login = () => {
           Create Account
         </button>
       </div>
-    </div>
+     </div>
   );
 };
 
