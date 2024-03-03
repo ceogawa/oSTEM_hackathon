@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import './Login';
 import './Register.css';
 
 export const Register = () => {
@@ -49,9 +50,9 @@ export const Register = () => {
   };
 
   return (
-    <div className="container">
-      <div className="form-container">
-      <h1>Scrapjam</h1>
+    <div className="container2">
+      <div className="form-container2">
+      <div claaName="header_bb2">BeyondBinary</div>
         <input
           type="text"
           placeholder="Username"
@@ -72,7 +73,7 @@ export const Register = () => {
         />
 
         {/* Create Account button */}
-        <button className="create-account-button" onClick={handleCreateAccount}>
+        <button className="create-account-button2" onClick={handleCreateAccount}>
           Create Account
         </button>
 
